@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body>
+
+    <div class="site-wrapper">
+
+      {% include header.html %}
+
+      <div class="upcoming clearfix">
+        <h2>— Upcoming Runs —</h2>
+
+        <div class="col-half">
+          <div class="racebox racebox-1">
+            <h3>Huntsville, ON</h3>
+            <div class="date">May 22, 2016</div>
+            <div class="soon-link">Registration Opening Soon</div>
+            <!-- <a href="#"></a> -->
+          </div>
+        </div>
+
+        <div class="col-half">
+          <div class="racebox racebox-2">
+            <h3>Sarnia, ON</h3>
+            <div class="date">September 3, 2016</div>
+            <div class="soon-link">Registration Opening Soon</div>
+            <!-- <a href="#"></a> -->
+          </div>
+        </div>
+
+      </div>
+
+      <div class="home-page-content">
+
+        <div class="img-row clearfix">
+          <img src="{{ site.baseurl }}/img/kid.jpg">
+          <img src="{{ site.baseurl }}/img/group.jpg">
+          <img src="{{ site.baseurl }}/img/couple.jpg">
+          <img src="{{ site.baseurl }}/img/girls.jpg">
+          <img class="hide-laptop" src="{{ site.baseurl }}/img/selfie.jpg">
+        </div>
+
+        <div class="info wrapper">
+          <h2>What is this?</h2>
+          <p class="extra-mb">This 5k isn't a race but rather an opportunity for you and your friends to celebrate health and happiness while getting plastered in explosions of beautiful colour along the way. If it sounds ridiculous, it's because it is. Ridiculously fun!</p>
+          <h2>Fundraising Opportunity</h2>
+          <p>The Run of Exploding Colour is also an opportunity for us to give back and help promote the great work that charities in Ontario are engaged in. Any charity can sign up with us and use the event as a launchpad for their own fundraising efforts by having runners secure pledges for their organization.</p>
+        </div>
+
+      </div>
+
+      {% include footer.html %}
+
+    </div>
+
+  </body>
+
+</html>
