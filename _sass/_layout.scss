@@ -127,14 +127,15 @@
         text-transform: uppercase;
         letter-spacing: .075em;
         border-bottom: 2px solid darken($blue, 10%);
-        &:hover {
-            cursor: no-drop;
-        }
     }
 
     .soon-link {
         background: $grey-color;
         border-color: $grey-color-dark;
+        &:hover,
+        &:focus {
+            cursor: no-drop;
+        }
     }
 }
 
