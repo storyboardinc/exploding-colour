@@ -3,12 +3,46 @@
     margin: 0 auto;
 }
 
+.btn {
+    display: inline-block;
+    background: $blue;
+    color: $white;
+    padding: 10px 15px;
+    font-size: $small-font-size;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: .075em;
+    border-bottom: 2px solid darken($blue, 10%);
+    &:hover,
+    &:focus,
+    &:active,
+    &:visited {
+        color: $white;
+    }
+}
+
+.btn-sm {
+    font-size: $smaller-font-size;
+    padding: 6px 10px;
+}
+
+.btn-soon {
+    background: $grey-color;
+    border-color: $grey-color-dark;
+    &:hover,
+    &:focus,
+    &:active {
+        cursor: no-drop;
+        text-decoration: none;
+    }
+}
+
 /**
  * Site header
  */
 .site-header {
     min-height: 56px;
-    padding: $spacing-unit*2 0;
+    padding: 0 0 $spacing-unit*2 0;
     text-align: center;
 
     // Positioning context for the mobile navigation icon
@@ -34,6 +68,16 @@
     overflow: hidden;
     clip: rect(0,0,0,0);
     border: 0;
+}
+
+.top-links {
+    padding: $spacing-unit/2 15px $spacing-unit*2 15px;
+    text-align: right;
+
+    .btn {
+        background: $red;
+        border-color: darken($red, 10%);
+    }
 }
 
 .brand {
@@ -115,27 +159,8 @@
         font-weight: bold;
     }
 
-    a,
-    .soon-link {
-        display: inline-block;
-        background: $blue;
-        color: $white;
-        padding: 10px 15px;
+    .btn {
         margin-top: $spacing-unit;
-        font-size: $small-font-size;
-        font-weight: bold;
-        text-transform: uppercase;
-        letter-spacing: .075em;
-        border-bottom: 2px solid darken($blue, 10%);
-    }
-
-    .soon-link {
-        background: $grey-color;
-        border-color: $grey-color-dark;
-        &:hover,
-        &:focus {
-            cursor: no-drop;
-        }
     }
 }
 
