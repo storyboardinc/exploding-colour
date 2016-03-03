@@ -23,7 +23,7 @@
 
 .btn-sm {
     font-size: $smaller-font-size;
-    padding: 6px 10px;
+    padding: 8px 12px;
 }
 
 .btn-soon {
@@ -71,7 +71,7 @@
 }
 
 .top-links {
-    padding: $spacing-unit/2 15px $spacing-unit*2 15px;
+    padding-bottom: $spacing-unit;
     text-align: right;
 
     .btn {
