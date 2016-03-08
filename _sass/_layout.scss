@@ -114,7 +114,7 @@
 }
 
 .info {
-    padding: $spacing-unit*2 15px;;
+    padding: $spacing-unit*2 15px;
 }
 
 .extra-mb {
@@ -152,6 +152,7 @@
     background: $purple;
     color: $white;
     padding: $spacing-unit*4 $spacing-unit;
+    position: relative;
 
     h3 {
         font-size: $base-font-size*2;
@@ -166,6 +167,18 @@
 
 .racebox-1 {
     background: $green;
+}
+
+.faq-link {
+    position: absolute;
+    bottom: $spacing-unit;
+    right: 0;
+    left: 0;
+
+    a {
+        color: $white;
+        text-decoration: underline;
+    }
 }
 
 .contact {
@@ -185,13 +198,11 @@
  */
 .site-footer {
     clear: both;
-    padding-bottom: $spacing-unit;
     text-align: center;
 }
 
 .logo-fogt {
-    display: block;
-    margin: $spacing-unit/2 auto;
+    margin: 0 auto;
     max-width: 150px;
 }
 
@@ -201,7 +212,6 @@ ul.social {
     margin: 0;
     background: $blacker;
     padding: 10px 0 5px;
-    margin-bottom: $spacing-unit;
 
     li {
         display: inline-block;
@@ -221,9 +231,38 @@ ul.social {
     }
 }
 
+.fogt {
+    background: $blue;
+    padding: $spacing-unit 15px;
+}
+
 .footer-heading {
     font-size: 18px;
     margin-bottom: $spacing-unit / 2;
+}
+
+.faq {
+    padding: $spacing-unit*2 15px;
+    text-align: left;
+    background: $yellow;
+    color: $black;
+    margin-top: $spacing-unit*3;
+    border: 15px solid $blacker;
+    border-bottom: none;
+
+    h1 {
+        margin-bottom: $spacing-unit*2;
+        font-weight: bold;
+    }
+
+    p {
+        margin-bottom: $spacing-unit;
+        padding-left: 15px;
+    }
+
+    a {
+        color: $black;
+    }
 }
 
 
