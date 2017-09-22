@@ -185,6 +185,14 @@
     }
 }
 
+.registration-closed {
+    max-width: 400px;
+    margin: $spacing-unit auto 0 auto;
+    background: $red;
+    border: 3px solid $yellow;
+    padding: $spacing-unit;
+}
+
 .contact {
     background: $yellow;
     padding: $spacing-unit;
